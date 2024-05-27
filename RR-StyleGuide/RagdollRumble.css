@@ -1,20 +1,20 @@
-body {
-    color: purple;
-}
-
-#RagdollRumble {
+#RagdollRumble .main{
     background-color: floralwhite;
     color: rgb(122, 92, 59);
     border: 3px solid rgb(122, 92, 59);
     border-radius: 10px;
     margin: 30px;
+    text-align: left;
+    padding: 30px;
+    font-family: 'JetBrains Mono';
 }
 
-#RagdollRumble h1 {
-    font-family: Constantia !important;
-    text-decoration-line: underline;
-    font-size: 35px;
-}
+    #RagdollRumble h1 {
+        font-family: Constantia !important;
+        text-decoration-line: underline;
+        font-size: 35px;
+        text-align: center;
+    }
 
 #RagdollRumble h2 {
 
@@ -83,4 +83,11 @@ body {
 .CodeMirror-cursor,
 .CodeMirror div.CodeMirror-secondarycursor{
     border-color: rgb(54, 46, 37) !important;
+}
+
+#RagdollRumble img {
+    display: block;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
