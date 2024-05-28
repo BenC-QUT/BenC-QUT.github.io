@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" href="RagdollRumble.css">
 
-<link rel="icon" href="RR_icon.PNG" type="image/x-icon">
+<link rel="icon" href="images/RR_icon.PNG" type="image/x-icon">
 
 <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 
@@ -16,7 +16,9 @@
 
 <div class="main">
 
-<img src="RR_logo.png">
+<a href="../index.html"><img src="images/Despirit.png" width=100px></a>
+
+<img src="images/RR_logo.png" width=70%>
 
 
 <h1> Style Guide </h1>
@@ -42,7 +44,7 @@ Regarding Chaos, as its name suggests it is a wild and unpredictable element tha
 <h2> Colours of The World </h2>
 Elements are identifiable via there own signature colours. Each element has a primary, secondary and tertiary colour that represents itself. These colours will be used whenever something that is associated with the element appears in the game, whether that is on the HUD, or in the world itself.
 
-<img src="element-colours.png" width=650px>
+<img src="images/element-colours.png" width=650px>
 
 <em>(Colours are listed from primary to tertiary from top to bottom)</em>
 
@@ -63,7 +65,22 @@ In-world, an elixir bottle will be coloured appropriate to the element of spell 
 On the HUD/UI an elixir is represent by a bottle, the liquid elixir, and an icon that represents the spell. The liquid <strong>must be the primary element colour</strong> and the icon <strong>must be the secondary element colour</strong>.
 On UI elements, elixirs will always be solid, flat colours. This helps with contrast between the backgrounds and icons as well as conveying a cartoony, saturated aesthetic.
 
-<img src="create-elixir.png" width=500px>
+
+<img src="images/create-elixir.png" width=450px>
+
+As an example of creating an elixir, here is an example of creating a <span class="water"> Water </span> element wave spell.
+
+<img src="images/elixirEmpty.PNG" width=200px>
+
+First, you get the icon for the empty elixir, this is the same for all elixirs and is the default state for elixirs on the HUD.
+
+<img src="images/animated_elixir.gif" width=200px>
+
+Secondly you get the animated background for the elixir, you have to use the colour background the matches element you are making a spell for. There is only one colour of elixir background for each element and it has to be a flat colour that corresponds to the element's <strong>primary</strong> colour.
+
+<img src="images/wave.png" width=200px>
+
+Finally, you make the icon for the spell. This spell should have a simple and easy to identify silhouette. It also must be a solid colour that matches the element's <strong>tertiary</strong> colour. 
 
 <h2> Basic Spells </h2>
 A basic spell is a spell that is at the foundational level of the element it belongs to. These spells are simple, basic even, so much so that your everyday magic wielder could cast it. These spells aren&#39;t the most powerful, world changing spells, but they are easy and <strong>versatile.</strong> Because of their simplicity wizards of a higher tier have been able to imbue the spell into small trinkets and objects. Just by having one of these imbued objects on your person would you allow you to wield these spells with the proficiency of a regular wizard.
@@ -73,14 +90,29 @@ Unlike elixirs, basic spells do not have an in-world object that they are associ
 <li>A UI representation</li>
 <li>VFX of the spell&#39;s effect</li>
 </ul>
-Just like an elixir, both the UI icon and the VFX in-world <strong>must adhere to the element it belongs to</strong>.
-Basic spells are represent on the UI via a spell trinket. A spell trinket is made up of three parts: <strong>A vessel, a spell gem, and an icon</strong>. The vessel of a basic spell remains the same no matter the spell, a simple golden circle with a slot in the middle for the spell gem. The spell gem and icon, however, <strong>follow the colouring conventions of the element of the spell</strong>. 
-Unlike the elixir&#39;s icons, the spell gem is not a flat colour and is shaded to show it&#39;s depth using the element&#39;s colours for highlights and shadows. The primary element colour makes up the gem core with highlights being the secondary colour and shadows being a slightly lighter shade of the tertiary colour. The icon of the spell imbued is a flat colour using the tertiary colour of the element.
-<strong>Basic spells are animated</strong>, this takes on multiple forms on the UI as the icons must also reflect the cooldowns and current use of the spell it represents. As such as basic spell has multiple animations, this includes a base animation, a blinking animation and a filling animation. The blinking and filling animations are used to reflect the current charge of spells that support a charge. When a spell that has a cooldown is used, the spell gem will disappear leaving an empty vessel behind while the icon of the spell remains.
 
-<img src="build-basic-spell.png" width=500px>
+Just like an elixir, both the UI icon and the VFX in-world <strong>must adhere to the element it belongs to.</strong>
+
+Basic spells are represent on the UI via a spell trinket. A spell trinket is made up of three parts: <strong>A vessel, a spell gem, and an icon.</strong> The vessel of a basic spell remains the same no matter the spell, a simple golden circle with a slot in the middle for the spell gem. The spell gem and icon, however, <strong>follows the colouring conventions of the element of the spell</strong>. 
+
+<img src="images/build-basic-spell.png" width=500px>
+
+Unlike the icon for an elixir, basic spells have basic shading and some more involved animation. Because of their importance to gameplay and the need to know what state your ability is in, the gem will change states depending on what is happening in game. For example, disappearing when on cooldown, blinking when fully charged etc.
+
+As an example of a basic spell let's make one for the <strong>jump</strong> basic spell which is of the <span class="wind">Wind</span> element.
+
+<img src="images/basicspell_empty.png" width=200px>
+
+First we get the background vessel of the spell, this is the same for all basic spells.
+
+<img src="images/basicSpellFinal.gif" width=200px>
+
+Then we get the animated gem of the spell, this one is green to match the <span class="wind"> Wind </span> element's colouring.
+
+<img src="images/basicJump_icon.png" width=200px>
+
+Lastly, you get the icon. The icon should be simple, and be a solid, flat colour. Make sure the colour is the <strong>tertiary</strong> colour of the corresponding element.
 
 </div>
-
 </body>
 </html>

@@ -2,6 +2,13 @@ body {
     background-color: mediumpurple;
 }
 
+img {
+    display: block;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #benc-home .main {
     background-color: lavender;
     border: solid 4px rebeccapurple;
