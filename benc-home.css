@@ -1,0 +1,40 @@
+body {
+    background-color: mediumpurple;
+}
+
+#benc-home .main {
+    background-color: lavender;
+    border: solid 4px rebeccapurple;
+    border-radius: 6px;
+    color: rgb(68, 62, 71);
+    padding: 15px;
+    margin: 10px;
+    font-family: 'JetBrains Mono';
+    text-align:center;
+}
+
+#benc-home h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#benc-home h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#benc-home .heading {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#benc-home p {
+    background-color: white;
+    border: solid 3px rebeccapurple;
+    border-radius: 6px;
+    padding: 15x;
+    margin-left: 25%;
+    margin-right: 25%;
+    white-space: pre-wrap;
+}
